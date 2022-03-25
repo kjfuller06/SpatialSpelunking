@@ -1,79 +1,105 @@
-Source,Access date,Variable,Units,Resolution,Projection,HorizontalDatum,Notes,Links
-"© State Government of NSW and Department of Planning, Industry and Environment 2019",2022-03-25,DEM,m,~30m,,,"DEM represents ground surface topography, with vegetation features removed using an automatic process supported by several vegetation maps. This provides substantial improvements in the quality and consistency of the data relative to the original SRTM data, but is not free from artefacts. Man-made structures such as urban areas and power line towers have not been treated. The removal of vegetation effects has produced satisfactory results over most of the continent and areas with defects identified in supplementary layers distributed with the data, and described in the User Guide.",
-"© State Government of NSW and Department of Planning, Industry and Environment 2019",2022-03-26,"DEM-H, hydrologically enforced, smoothed DEM",m,~30m,,,"DEM-H is a hydrologically enforced version of the smoothed DEM-S. The DEM-H captures flow paths based on SRTM elevations and mapped stream lines, and supports delineation of catchments and related hydrological attributes. The dataset was derived from the 1 second smoothed Digital Elevation Model (DEM-S) by enforcing hydrological connectivity with the ANUDEM software, using selected AusHydro V1.6 (February 2010) 1:250,000 scale watercourse lines and lines derived from DEM-S to define the watercourses. The drainage enforcement has produced a consistent representation of hydrological connectivity with some elevation artefacts resulting from the drainage enforcement.",
-"Gallant, J., Wilson, N., Dowling, T., Read, A., Inskeep, C. 2011. SRTM-derived 1 Second Digital Elevation Models Version 1.0. Record 1. Geoscience Australia, Canberra. http://pid.geoscience.gov.au/dataset/ga/72759",2022-03-27,"DEM-S, smoothed DEM",m,~30m,,,"DEM-S represents ground surface topography, excluding vegetation features, and has been smoothed to reduce noise and improve the representation of surface shape. An adaptive smoothing process applied more smoothing in flatter areas than hilly areas, and more smoothing in noisier areas than in less noisy areas. This DEM-S supports calculation of local terrain shape attributes such as slope, aspect and curvature that could not be reliably derived from the unsmoothed 1 second DEM because of noise.",https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/72759
-Global Multi-resolution Terrain Elevation Data 2010 (GMTED),2022-03-28,DEM,m,"250m, 500m and 1km, except Greenland and Antarctica which only have 1km res",,,Composed of several other datasets for void-filling and creating global extent,
-GridMET,2022-03-29,daily surface meteorological data,,~4km,,,,
-Shuttle Radar Topographic Mission (SRTM),2022-03-30,SRTM Non-Void Filled (DEM),m,1 arc-sec in USA; 3 arc-sec outside USA (~30m/~100m),Geographic,WGS84,,https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-non?qt-science_center_objects=0#qt-science_center_objects
-SRTM,2022-03-31,SRTM 1 Arc-Second Global (DEM; void filled),m,1 arc-sec (~30m),Geographic,WGS84,Some voids may still be present; check EarthExplorer to verify coverage; tiles above 50degrees north and below 50degrees south are sampled at 2 arc-sec by 1 arc-sec,https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-1-arc?qt-science_center_objects=0#qt-science_center_objects
-SRTM,2022-04-01,SRTM Void Filled (DEM),m,2 arc-sec in USA; 3 arc-sec outside USA (~60m/~100m),Geographic,WGS84,,https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-void?qt-science_center_objects=0#qt-science_center_objects
-RFS,2022-04-02,Fireyeartifs,,~80m,,,tifs were grabbed from the Bushfire Hub database on  CloudStor; no metadata attached,
-WorldClim,2022-04-03,average temperature,C*10,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-04,BIO1 = Annual Mean Temperature,C*10,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-05,BIO10 = Mean Temperature of Warmest Quarter,C*10,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-06,BIO11 = Mean Temperature of Coldest Quarter,C*10,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-07,BIO12 = Annual Precipitation,mm,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-08,BIO13 = Precipitation of Wettest Month,mm,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-09,BIO14 = Precipitation of Driest Month,mm,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-10,BIO15 = Precipitation Seasonality (Coefficient of Variation),mm,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-11,BIO16 = Precipitation of Wettest Quarter,mm,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-12,BIO17 = Precipitation of Driest Quarter,mm,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-13,BIO18 = Precipitation of Warmest Quarter,mm,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-14,BIO19 = Precipitation of Coldest Quarter,mm,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-15,BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),C*10,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-16,BIO3 = Isothermality (BIO2/BIO7) (×100),?,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-17,BIO4 = Temperature Seasonality (standard deviation ×100),?,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-18,BIO5 = Max Temperature of Warmest Month,C*10,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-19,BIO6 = Min Temperature of Coldest Month,C*10,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-20,BIO7 = Temperature Annual Range (BIO5-BIO6),C*10,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-21,BIO8 = Mean Temperature of Wettest Quarter,C*10,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-22,BIO9 = Mean Temperature of Driest Quarter,C*10,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-23,maximum temperature,C*10,30sec-10min (~1km - 18km),,,Also available in 2.5min res for historal monthly data for each decade 1960-2018,https://worldclim.org/
-WorldClim,2022-04-24,minimum temperature,C*10,30sec-10min (~1km - 18km),,,Also available in 2.5min res for historal monthly data for each decade 1960-2018,https://worldclim.org/
-WorldClim,2022-04-25,precipitation,mm,30sec-10min (~1km - 18km),,,Also available in 2.5min res for historal monthly data for each decade 1960-2018,https://worldclim.org/
-WorldClim,2022-04-26,solar radiation,kJ/m2/d,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-27,water vapor pressure,kPa,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-WorldClim,2022-04-28,wind speed,m/s,30sec-10min (~1km - 18km),,,,https://worldclim.org/
-"© State Government of NSW and Department of Planning, Industry and Environment 2019",2022-04-29,NSW Native Vegetation Extent 5m Raster v1.2,NA,5m,,GDA94 Geographic (Lat\Long),,https://datasets.seed.nsw.gov.au/dataset/nsw-native-vegetation-extent-5m-raster-v1-0
-"© State Government of NSW and Department of Planning, Industry and Environment 2011",2022-04-30,Rectified and radiometrically corrected SPOT imagery. 2008-2010,,,,GDA94 / MGAZone 55,Only available to other government agencies upon request,
-CSIRO,2022-05-01,"Soil attributes- bulk density whole earth, organic carbon, clay/silt/sand fractions, pH- CaCl2, available water capacity, total nitrogen, total phosphorus, electrical conductivity, effective cation exchange capacity, depth of regolith, depth of soil. Not downloaded: pH- water",,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-CSIRO,2022-05-02,Soil attributes- bulk density whole earth,,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-CSIRO,2022-05-03,Soil attributes- organic carbon,,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-CSIRO,2022-05-04,Soil attributes- clay fractions,,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-CSIRO,2022-05-05,Soil attributes- silt fractions,,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-CSIRO,2022-05-06,Soil attributes- sand fractions,,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-CSIRO,2022-05-07,Soil attributes- pH- CaCl2,,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-CSIRO,2022-05-08,Soil attributes- available water capacity,,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-CSIRO,2022-05-09,Soil attributes- total nitrogen,,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-CSIRO,2022-05-10,Soil attributes- total phosphorus,,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-CSIRO,2022-05-11,Soil attributes- electrical conductivity,,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-CSIRO,2022-05-12,Soil attributes- effective cation exchange capacity,,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-CSIRO,2022-05-13,Soil attributes- depth of regolith,,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-CSIRO,2022-05-14,Soil attributes- depth of soil,,0.00083,longlat,GRS80,"More websites listed in the ""Websites"" tab; many citations may be required for these datasets. Need to check in the Websites tab and look through the attribution info for multiple datasets to see if they are different as listed in CSIRO's Data Access Portal",https://www.clw.csiro.au/aclep/soilandlandscapegrid/ProductDetails-SoilAttributes.html#FileNamingConventions
-© State Government of NSW and Office of Environment and Heritage,2022-05-15,SPOT5- derived NDVI,,,,,,
-Global Aridity and PET Database (Trabucco and Zomer 2018),2022-05-16,"Annual aridity, annual PET and monthly PET",,30sec (~1km),,,,
-BOM,2022-05-17,NDVI,,0.01 degrees,,,"""Any use of this data should include acknowledgement of the satellites of NOAA as the original source of the satellite data, and acknowledgement of the Commonwealth of Australia (Bureau of Meteorology) which received and processed the data into ndvi, and acknowledgement of the CSIRO which developed the code to process the NOAA satellite data, and the AusCover Project which funded the creation of this file.""",http://data.auscover.org.au/xwiki/bin/view/Product+pages/AVHHR+NDVI+NoAC+BoM
-BOM,2022-05-18,NDVI,,0.01 degrees,,,"""Any use of this data should include acknowledgement of the satellites of NOAA as the original source of the satellite data, and acknowledgement of the Commonwealth of Australia (Bureau of Meteorology) which received and processed the data into ndvi, and acknowledgement of the CSIRO which developed the code to process the NOAA satellite data, and the AusCover Project which funded the creation of this file.""",http://data.auscover.org.au/xwiki/bin/view/Product+pages/AVHHR+NDVI+NoAC+BoM
-BOM,2022-05-19,NDVI,,0.01 degrees,,,"""Any use of this data should include acknowledgement of the satellites of NOAA as the original source of the satellite data, and acknowledgement of the Commonwealth of Australia (Bureau of Meteorology) which received and processed the data into ndvi, and acknowledgement of the CSIRO which developed the code to process the NOAA satellite data, and the AusCover Project which funded the creation of this file.""",http://data.auscover.org.au/xwiki/bin/view/Product+pages/AVHHR+NDVI+NoAC+BoM
-BOM,2022-05-20,NDVI,,0.01 degrees,,,"""Any use of this data should include acknowledgement of the satellites of NOAA as the original source of the satellite data, and acknowledgement of the Commonwealth of Australia (Bureau of Meteorology) which received and processed the data into ndvi, and acknowledgement of the CSIRO which developed the code to process the NOAA satellite data, and the AusCover Project which funded the creation of this file.""",http://data.auscover.org.au/xwiki/bin/view/Product+pages/AVHHR+NDVI+NoAC+BoM
-BOM,2022-05-21,NDVI,,0.01 degrees,,,"""Any use of this data should include acknowledgement of the satellites of NOAA as the original source of the satellite data, and acknowledgement of the Commonwealth of Australia (Bureau of Meteorology) which received and processed the data into ndvi, and acknowledgement of the CSIRO which developed the code to process the NOAA satellite data, and the AusCover Project which funded the creation of this file.""",http://data.auscover.org.au/xwiki/bin/view/Product+pages/AVHHR+NDVI+NoAC+BoM
-BOM,2022-05-22,NDVI,,0.01 degrees,,,"""Any use of this data should include acknowledgement of the satellites of NOAA as the original source of the satellite data, and acknowledgement of the Commonwealth of Australia (Bureau of Meteorology) which received and processed the data into ndvi, and acknowledgement of the CSIRO which developed the code to process the NOAA satellite data, and the AusCover Project which funded the creation of this file.""",http://data.auscover.org.au/xwiki/bin/view/Product+pages/AVHHR+NDVI+NoAC+BoM
-BOM,2022-05-23,NDVI,,0.01 degrees,,,"""Any use of this data should include acknowledgement of the satellites of NOAA as the original source of the satellite data, and acknowledgement of the Commonwealth of Australia (Bureau of Meteorology) which received and processed the data into ndvi, and acknowledgement of the CSIRO which developed the code to process the NOAA satellite data, and the AusCover Project which funded the creation of this file.""",http://data.auscover.org.au/xwiki/bin/view/Product+pages/AVHHR+NDVI+NoAC+BoM
-BOM,2022-05-24,NDVI,,0.01 degrees,,,"""Any use of this data should include acknowledgement of the satellites of NOAA as the original source of the satellite data, and acknowledgement of the Commonwealth of Australia (Bureau of Meteorology) which received and processed the data into ndvi, and acknowledgement of the CSIRO which developed the code to process the NOAA satellite data, and the AusCover Project which funded the creation of this file.""",http://data.auscover.org.au/xwiki/bin/view/Product+pages/AVHHR+NDVI+NoAC+BoM
-BOM,2022-05-25,NDVI,,0.01 degrees,,,"""Any use of this data should include acknowledgement of the satellites of NOAA as the original source of the satellite data, and acknowledgement of the Commonwealth of Australia (Bureau of Meteorology) which received and processed the data into ndvi, and acknowledgement of the CSIRO which developed the code to process the NOAA satellite data, and the AusCover Project which funded the creation of this file.""",http://data.auscover.org.au/xwiki/bin/view/Product+pages/AVHHR+NDVI+NoAC+BoM
-BOM,2022-05-26,NDVI,,0.01 degrees,,,"""Any use of this data should include acknowledgement of the satellites of NOAA as the original source of the satellite data, and acknowledgement of the Commonwealth of Australia (Bureau of Meteorology) which received and processed the data into ndvi, and acknowledgement of the CSIRO which developed the code to process the NOAA satellite data, and the AusCover Project which funded the creation of this file.""",http://data.auscover.org.au/xwiki/bin/view/Product+pages/AVHHR+NDVI+NoAC+BoM
-BOM,2022-05-27,NDVI,,0.01 degrees,,,"""Any use of this data should include acknowledgement of the satellites of NOAA as the original source of the satellite data, and acknowledgement of the Commonwealth of Australia (Bureau of Meteorology) which received and processed the data into ndvi, and acknowledgement of the CSIRO which developed the code to process the NOAA satellite data, and the AusCover Project which funded the creation of this file.""",http://data.auscover.org.au/xwiki/bin/view/Product+pages/AVHHR+NDVI+NoAC+BoM
-BOM,2022-05-28,NDVI,,0.01 degrees,,,"""Any use of this data should include acknowledgement of the satellites of NOAA as the original source of the satellite data, and acknowledgement of the Commonwealth of Australia (Bureau of Meteorology) which received and processed the data into ndvi, and acknowledgement of the CSIRO which developed the code to process the NOAA satellite data, and the AusCover Project which funded the creation of this file.""",http://data.auscover.org.au/xwiki/bin/view/Product+pages/AVHHR+NDVI+NoAC+BoM
-CSIRO,2022-05-29,"Plan Curvature derived from 1"" SRTM DEM-S",,1 arc-second,,WGS84,"Citation: Gallant,J., Austin,J. (2016): Plan Curvature derived from 1"" SRTM DEM-S. Version v2. Commonwealth Scientific and Industrial Research Organisation (CSIRO). dataset. https://doi.org/10.4225/08/56DE806D91E44",https://data.csiro.au/collections/collection/CIcsiro:5591v2
-CSIRO,2022-05-30,"Profile Curvature derived from 1"" SRTM DEM-S",,1 arc-second,,WGS84,"Citation: Gallant,J., Austin,J. (2016): Profile Curvature derived from 1"" SRTM DEM-S. Version v2. Commonwealth Scientific and Industrial Research Organisation (CSIRO). dataset. https://doi.org/10.4225/08/56E9DEBF65706",https://data.csiro.au/collections/collection/CIcsiro:5592v2
-CSIRO,2022-05-31,"Slope Relief Classification derived from 1"" SRTM DEM-S",,1 arc-second,,WGS84,"Citation: Gallant,J., Austin,J. (2016): Slope Relief Classification derived from 1"" SRTM DEM-S. Version v3. Commonwealth Scientific and Industrial Research Organisation (CSIRO). dataset. https://doi.org/10.4225/08/57512079C1A93",https://data.csiro.au/collections/collection/CIcsiro:5593v3
-CSIRO,2022-06-01,"Aspect derived from 1"" SRTM DEM-S",,1 arc-second,,,"Citation: Gallant,J., Austin,J. (2016): Aspect derived from 1"" SRTM DEM-S. Version v6. Commonwealth Scientific and Industrial Research Organisation (CSIRO). dataset. https://doi.org/10.4225/08/56D778315A62B",https://data.csiro.au/dap/landingpage?pid=csiro:5037
-CSIRO,2022-06-02,"Topographic Wetness Index derived from 1"" SRTM DEM-H",,1 arc-second,,WGS84,"Citation: Gallant,J., Austin,J. (2016): Topographic Wetness Index derived from 1"" SRTM DEM-H. Version v2. Commonwealth Scientific and Industrial Research Organisation (CSIRO). dataset. https://doi.org/10.4225/08/57590B59A4A08",https://data.csiro.au/collections/collection/CIcsiro:5588v2
-CSIRO,2022-06-03,"Mean monthly shortwave radiation ratio modelled using the 1"" DEM-S - 1"" tiles",,1 arc-second,,,"Citation: Gallant, John; Austin, Jenet; Van Niel, Tom (2014): Mean monthly shortwave radiation ratio modelled using the 1"" DEM-S - 1"" tiles. v3. CSIRO. Data Collection. https://doi.org/10.4225/08/579AA85D210E7 ",https://data.csiro.au/dap/landingpage?pid=csiro:9631
-CSIRO,2022-06-04,"Mean monthly total shortwave radiation on a sloping surface modelled using the 1"" DEM-S",,1 arc-second,,,"Citation: John Gallant; Jenet Austin; Tom Van Niel (2014): Mean monthly total shortwave radiation on a sloping surface modelled using the 1"" DEM-S. v2. CSIRO. Data Collection. 10.4225/08/53C791583B37E",https://data.csiro.au/dap/landingpage?pid=csiro:9530
-CSIRO,2022-06-05,"Mean monthly net longwave radiation modelled using the 1"" DEM-S - 1"" tiles",,1 arc-second,,,"Citation: Gallant, John; Austin, Jenet; Van Niel, Tom (2014): Mean monthly net longwave radiation modelled using the 1"" DEM-S - 1"" tiles. v3. CSIRO. Data Collection. https://doi.org/10.4225/08/579844E1234E3 ",https://data.csiro.au/dap/landingpage?pid=csiro:9633
-CSIRO,2022-06-06,"Mean monthly net radiation modelled using the 1"" DEM-S",,1 arc-second,,,"Citation: John Gallant; Jenet Austin; Tom Van Niel (2014): Mean monthly net radiation modelled using the 1"" DEM-S. v2. CSIRO. Data Collection. 10.4225/08/53D9A1C26C99F",https://data.csiro.au/dap/landingpage?pid=csiro:9630
-CSIRO,2022-06-07,"Prescott Index derived from 1"" SRTM DEM-S",,1 arc-second,,,"Citation: Gallant,J., Austin,J. (2014): Prescott Index derived from 1"" SRTM DEM-S. Version v2. Commonwealth Scientific and Industrial Research Organisation (CSIRO). dataset. https://doi.org/10.4225/08/53EB2D0EAE377",https://data.csiro.au/dap/landingpage?pid=csiro:9636
-CSIRO,2022-06-08,"SRAD sky view factor modelled using the 1"" DEM-S",,1 arc-second,,,"Citation: John Gallant; Jenet Austin; Tom Van Niel (2014): SRAD sky view factor modelled using the 1"" DEM-S. v2. CSIRO. Data Collection. 10.4225/08/53D08DBBD4D42",https://data.csiro.au/dap/landingpage?pid=csiro:9635
-TERN,2022-06-09,"Vegetation height and structure- derived from ALOS-1 PALSAR, Landsat, ICESat/GLAS",,25m,,,"Citation: Peter Scarth (2011): Vegetation height and structure - derived from ALOS-1 PALSAR, Landsat and ICESat/GLAS, Australia coverage. Version 1. Terrestrial Ecosystem Research Network (TERN). dataset",https://geonetwork.tern.org.au/geonetwork/srv/eng/catalog.search#/metadata/de1c2fef-b129-485e-9042-8b22ee616e66
-"© State Government of NSW and Department of Planning, Industry and Environment 2019",2022-06-10,NSW State Vegetation Type Map (SVTM),,30m,,,,
+Source,Access date,Variable,Units,Timescale,Extent,Resolution,Projection,Notes,Links,HorizontalDatum
+PRISM,3/25/2022,Precipitation,inches,30 year monthly norm (1991-2020),USA,800m,4326,,,
+PRISM,3/25/2022,Mean Temperature,fahrenheit ,30 year monthly norm (1991-2020),USA,800m,4326,,,
+PRISM,3/25/2022,Minimum Temperature,fahrenheit ,30 year monthly norm (1991-2020),USA,800m,4326,,,
+PRISM,3/25/2022,Maximum Temperature,fahrenheit ,30 year monthly norm (1991-2020),USA,800m,4326,,,
+PRISM,3/25/2022,Mean dew point temperature,fahrenheit ,30 year monthly norm (1991-2020),USA,800m,4326,,,
+PRISM,3/25/2022,Minimum vapor pressure deficit,hPa,30 year monthly norm (1991-2020),USA,800m,4326,,,
+PRISM,3/25/2022,Maximum vapor pressure deficit,hPa,30 year monthly norm (1991-2020),USA,800m,4326,,,
+PRISM,3/25/2022,Solar radiation (horizontal),MJ m-2 day-1,30 year monthly norm (1991-2020),USA,800m,4326,,,
+PRISM,3/25/2022,Solar radiation (sloped),MJ m-2 day-1,30 year monthly norm (1991-2020),USA,800m,4326,,,
+PRISM,3/25/2022,Solar radiation (clear sky),MJ m-2 day-1,30 year monthly norm (1991-2020),USA,800m,4326,,,
+PRISM,3/25/2022,Cloud Transmittance,Proportation (0-1),30 year monthly norm (1991-2020),USA,800m,4326,,,
+PRISM,3/25/2022,Elevation,Feet,30 year monthly norm (1991-2020),USA,800m,4326,,,
+PRISM,3/25/2022,Precipitation,inches,Daily (Jan 1981 - Aug 202),USA,4km,4326,,,
+PRISM,3/25/2022,Mean Temperature,fahrenheit ,Daily (Jan 1981 - Aug 202),USA,4km,4326,,,
+PRISM,3/25/2022,Minimum Temperature,fahrenheit ,Daily (Jan 1981 - Aug 202),USA,4km,4326,,,
+PRISM,3/25/2022,Maximum Temperature,fahrenheit ,Daily (Jan 1981 - Aug 202),USA,4km,4326,,,
+PRISM,3/25/2022,Mean dew point temperature,fahrenheit ,Daily (Jan 1981 - Aug 202),USA,4km,4326,,,
+PRISM,3/25/2022,Minimum vapor pressure deficit,hPa,Daily (Jan 1981 - Aug 202),USA,4km,4326,,,
+PRISM,3/25/2022,Maximum vapor pressure deficit,hPa,Daily (Jan 1981 - Aug 202),USA,4km,4326,,,
+WorldClim,3/25/2022,Precipitation,mm,Monthly mean (1960-2018),Global,21km,4326,,,
+WorldClim,3/25/2022,Minimum Temperature,C*10,Monthly mean (1960-2018),Global,21km,4326,,,
+WorldClim,3/25/2022,Maximum Temperature,C*10,Monthly mean (1960-2018),Global,21km,4326,,,
+WorldClim,3/25/2022,average temperature,C*10,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO1 = Annual Mean Temperature,C*10,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO10 = Mean Temperature of Warmest Quarter,C*10,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO11 = Mean Temperature of Coldest Quarter,C*10,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO12 = Annual Precipitation,mm,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO13 = Precipitation of Wettest Month,mm,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO14 = Precipitation of Driest Month,mm,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO15 = Precipitation Seasonality (Coefficient of Variation),mm,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO16 = Precipitation of Wettest Quarter,mm,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO17 = Precipitation of Driest Quarter,mm,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO18 = Precipitation of Warmest Quarter,mm,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO19 = Precipitation of Coldest Quarter,mm,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),C*10,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO3 = Isothermality (BIO2/BIO7) (×100),?,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO4 = Temperature Seasonality (standard deviation ×100),?,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO5 = Max Temperature of Warmest Month,C*10,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO6 = Min Temperature of Coldest Month,C*10,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO7 = Temperature Annual Range (BIO5-BIO6),C*10,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO8 = Mean Temperature of Wettest Quarter,C*10,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,BIO9 = Mean Temperature of Driest Quarter,C*10,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,maximum temperature,C*10,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,minimum temperature,C*10,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,precipitation,mm,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,solar radiation,kJ/m2/d,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,water vapor pressure,kPa,Monthly normal (1970-2000),Global,1km,4326,,,
+WorldClim,3/25/2022,wind speed,m/s,Monthly normal (1970-2000),Global,1km,4326,,,
+MODIS,3/25/2022,Photosynthetically active radation,W m-2,"Daily, 3hour (2001-current)",Global,5km,4326,"Still updating, need to have R job to download",,
+Chelsa,3/25/2022,Daily mean precipitation (pr),kg m-2 s-1,1979-2016 (daily),Global,1km,4326,,,
+Chelsa,3/25/2022,Daily mean surface downwelling shortwave radiation (rsds),W m-2,1979-2016 (daily),Global,1km,4326,,,
+Chelsa,3/25/2022,Daily mean near-surface air temperature (tas),K,1979-2016 (daily),Global,1km,4326,,,
+Chelsa,3/25/2022,Daily maximum near-surface air temperature (tasmax),K,1979-2016 (daily),Global,1km,4326,,,
+Chelsa,3/25/2022,Daily minimum near-surface air temperature (tasmin),K,1979-2016 (daily),Global,1km,4326,,,
+Chelsa,3/25/2022,Surface altitude (orog),m,1979-2016 (daily),Global,1km,4326,,,
+Chelsa,3/25/2022,Land-sea mask (mask),1,1979-2016 (daily),Global,1km,4326,,,
+Chelsa,3/25/2022,Climate moisture index (Precip amount - PET) (CMI),kg m-2 month-1,1980-2019 (monthly averages),Global,1km,4326,,,
+Chelsa,3/25/2022,Near surface relative humidity (hurs),percent,1980-2019 (monthly averages),Global,1km,4326,,,
+Chelsa,3/25/2022,Potential evapotranspiration (pet_penman),kg m-2 month-1,1980-2019 (monthly averages),Global,1km,4326,,,
+Chelsa,3/25/2022,precipitation (pr),kg m-2 month-1/100,1980-2019 (monthly averages),Global,1km,4326,,,
+Chelsa,3/25/2022,Surface downwelling shortwave flux in air (clouds accounted for) (rsds),MJ m-2 day-1,1980-2019 (monthly averages),Global,1km,4326,,,
+Chelsa,3/25/2022,Near surface wind speed 10m above ground (sfcWind),m/s,1980-2019 (monthly averages),Global,1km,4326,,,
+Chelsa,3/25/2022,Mean daily maximum 2m air temperature (tasmax),K/10,1980-2019 (monthly averages),Global,1km,4326,,,
+Chelsa,3/25/2022,Mean daily air temperature 2m (tas),K/10,1980-2019 (monthly averages),Global,1km,4326,,,
+Chelsa,3/25/2022,Mean daily minimum 2m air temperature (tasmin),K/10,1980-2019 (monthly averages),Global,1km,4326,,,
+Chelsa,3/25/2022,Total cloud cover (tcc),percent,1980-2019 (monthly averages),Global,1km,4326,,,
+Chelsa,3/25/2022,vapor pressure deficit (vpd),Pa,1980-2019 (monthly averages),Global,1km,4326,,,
+Chelsa,3/25/2022,"Extensions of bioclim variables (e.g. RH, PET, frost, growing season length, radiation)",NA,1979-2013 (monthly normals),Global,1km,4326,,,
+CRU,3/25/2022,Mean 2m temperature (TMP),celsius,1901-2020 (monthly average),Global,55km,4326,,,
+CRU,3/25/2022,Diurnal 2m temperature range (DTR),celsius,1901-2020 (monthly average),Global,55km,4326,,,
+CRU,3/25/2022,Preciptiation rate (pre),mm month-1,1901-2020 (monthly average),Global,55km,4326,,,
+CRU,3/25/2022,vapor pressure (vap),hPa,1901-2020 (monthly average),Global,55km,4326,,,
+CRU,3/25/2022,wet days >1mm precipitation (wet),days,1901-2020 (monthly average),Global,55km,4326,,,
+CRU,3/25/2022,cloud cover (cld),%,1901-2020 (monthly average),Global,55km,4326,,,
+CRU,3/25/2022,frost days (frs),days month-1,1901-2020 (monthly average),Global,55km,4326,,,
+CRU,3/25/2022,minimum 2m temperature (TMN),celsius,1901-2020 (monthly average),Global,55km,4326,,,
+CRU,3/25/2022,maximum 2m temperature (TMX),celsius,1901-2020 (monthly average),Global,55km,4326,,,
+CRU,3/25/2022,Potential evapotranspiration (pet),mm day-1,1901-2020 (monthly average),Global,55km,4326,,,
+USGS,3/25/2022,Elevation,m,NA,Global,30m,4326,,https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-1,
+SoilsGrid,3/25/2022,Organic carbon density,g/dm3,NA,Global,250m,4326,,https://soilgrids.org/,
+SoilsGrid,3/25/2022,Soil organic carbon stock,tons/ha,NA,Global,250m,4326,,https://soilgrids.org/,
+SoilsGrid,3/25/2022,Bulk density,cg/cm3,NA,Global,250m,4326,,https://soilgrids.org/,
+SoilsGrid,3/25/2022,Clay content,g/kg,NA,Global,250m,4326,,https://soilgrids.org/,
+SoilsGrid,3/25/2022,Coarse fragments,cm3/dm3,NA,Global,250m,4326,,https://soilgrids.org/,
+SoilsGrid,3/25/2022,Sand,g/kg,NA,Global,250m,4326,,https://soilgrids.org/,
+SoilsGrid,3/25/2022,Silt,g/kg,NA,Global,250m,4326,,https://soilgrids.org/,
+SoilsGrid,3/25/2022,Cation exchange capacity (at pH 7),mmol C/kg,NA,Global,250m,4326,,https://soilgrids.org/,
+SoilsGrid,3/25/2022,Nitrogen,cg/kg,NA,Global,250m,4326,,https://soilgrids.org/,
+SoilsGrid,3/25/2022,Soil organic carbon,dg/kg,NA,Global,250m,4326,,https://soilgrids.org/,
+SoilsGrid,3/25/2022,pH water,pH*10,NA,Global,250m,4326,,https://soilgrids.org/,
+SoilsGrid,3/25/2022,Soil classification,most probable,NA,Global,250m,4326,,https://soilgrids.org/,
+DAAC,3/25/2022,labile inorganic P (Lab),g P/m2,NA,Global,55km,4326,,https://daac.ornl.gov/SOILS/guides/Global_Phosphorus_Dist_Map.html,
+DAAC,3/25/2022,organic P (org),g P/m2,NA,Global,55km,4326,,https://daac.ornl.gov/SOILS/guides/Global_Phosphorus_Dist_Map.html,
+DAAC,3/25/2022,occluded P (Occ),g P/m2,NA,Global,55km,4326,,https://daac.ornl.gov/SOILS/guides/Global_Phosphorus_Dist_Map.html,
+DAAC,3/25/2022,Secondary minearl P (Sec),g P/m2,NA,Global,55km,4326,,https://daac.ornl.gov/SOILS/guides/Global_Phosphorus_Dist_Map.html,
+DAAC,3/25/2022,apatite P (apa),g P/m2,NA,Global,55km,4326,,https://daac.ornl.gov/SOILS/guides/Global_Phosphorus_Dist_Map.html,
+DAAC,3/25/2022,Total P,g P/m2,NA,Global,55km,4326,,https://daac.ornl.gov/SOILS/guides/Global_Phosphorus_Dist_Map.html,
+DAAC,3/25/2022,total available water capacity,mm water per 1 m soil depth,1950-1995,Global,55km,4326,,https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=546,
+DAAC,3/25/2022,soil organic carbon density (0-30cm),kg C m-2,1950-1995,Global,55km,4326,,https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=546,
+DAAC,3/25/2022,soil organic carbon density (30-100cm),kg C m-2,1950-1995,Global,55km,4326,,https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=546,
+DAAC,3/25/2022,soil carbonate carbon density (0-100cm),kg C m-2,1950-1995,Global,55km,4326,,https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=546,
+DAAC,3/25/2022,soil pH (0-30 cm),pH,1950-1995,Global,55km,4326,,https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=546,
+DAAC,3/25/2022,soil pH (30-100cm),pH,1950-1995,Global,55km,4326,,https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=546,
+SMAP,3/25/2022,Surface soil moisture,??,2015-present (24 hour release),Global,3km,4326,,,
